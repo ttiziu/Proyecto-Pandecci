@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Pandecci</title>
+    <title>Generador de Citas Aleatorias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Bienvenido a Proyecto Pandecci</h1>
-    <p>Esta es una página básica de inicio tarao.</p>
+    <div class="container">
+        <h1>Cita del Día</h1>
+        <div class="quote-box">
+            <p id="quote-text"></p>
+            <span id="quote-author"></span>
+        </div>
+        <button id="new-quote-btn">Nueva Cita</button>
+        <div class="share-buttons">
+            <a id="twitter-share" href="#" target="_blank" title="Compartir en Twitter"><i class="fab fa-twitter"></i></a>
+            <a id="whatsapp-share" href="#" target="_blank" title="Compartir en WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

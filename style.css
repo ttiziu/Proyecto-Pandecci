@@ -1,0 +1,97 @@
+css
+body {
+font-family: 'Arial', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+background-color: #f4f4f4; /* Fondo inicial /
+transition: background-color 0.5s ease; / Transición para el cambio de fondo */
+color: #333;
+}
+
+.container {
+background-color: #fff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+text-align: center;
+max-width: 600px;
+width: 90%;
+}
+
+h1 {
+color: #007bff;
+margin-bottom: 25px;
+}
+
+.quote-box {
+min-height: 120px; /* Para evitar saltos de diseño si la cita es corta */
+margin-bottom: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#quote-text {
+font-size: 1.8em;
+font-style: italic;
+margin-bottom: 15px;
+line-height: 1.5;
+color: #555;
+}
+
+#quote-author {
+font-size: 1.1em;
+font-weight: bold;
+color: #777;
+align-self: flex-end; /* Alinear el autor a la derecha */
+margin-top: 10px;
+}
+
+button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 12px 25px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin-top: 20px;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.share-buttons {
+margin-top: 25px;
+}
+
+.share-buttons a {
+color: #007bff;
+font-size: 2em;
+margin: 0 10px;
+transition: color 0.3s ease;
+}
+
+.share-buttons a:hover {
+color: #0056b3;
+}
+
+/* Responsividad básica */
+@media (max-width: 600px) {
+#quote-text {
+font-size: 1.4em;
+}
+#quote-author {
+font-size: 0.9em;
+}
+button {
+padding: 10px 20px;
+font-size: 0.9em;
+}
+}
